@@ -11,7 +11,7 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 
 **Bold** and _Italic_ and `Code` text
 
-[Link](https://github.com/Rajesh-VPai/JavaCalculus) and ![Image](src)
+[Link]( https://github.com/Rajesh-VPai/JavaCalculus ) and ![Image](src)
 
 #### About Java Calculus
 
