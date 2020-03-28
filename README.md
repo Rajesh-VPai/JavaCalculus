@@ -12,8 +12,9 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 **Bold** and _Italic_ and `Code` text
 
 [Link](https://github.com/Rajesh-VPai/JavaCalculus) and ![Image](src)
-```
+
 #### About Java Calculus
+
 JavaCalculus is a Maths String Java Package that has the below:
 1. Expression Interface:To obtain the value of a String Equation.
     - Taken initially from StackOverflow. Code written by StackOverflow User:Boann  and 
