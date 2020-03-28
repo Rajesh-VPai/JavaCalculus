@@ -20,6 +20,7 @@ JavaCalculus is a Maths String Java Package that has the below:
     - Taken initially from StackOverflow. Code written by StackOverflow User:Boann  and 
     - Code written by StackOverflow User:Mike Scholtes
     - Free Source
+    - But modified by me extensively
 2. Differentiation Interface:To obtain the Symbolic Differentiation of an String Equation.
 3. Integration Interface:To obtain the Symbolic Integration of an String Equation.
 4. Algebra Interface :To obtain the expansion of an Algebraic multiplication of 2 equations.
