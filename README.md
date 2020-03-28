@@ -8,23 +8,38 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
 
 **Bold** and _Italic_ and `Code` text
 
 [Link](url) and ![Image](src)
 ```
+#### About Java Calculus
+JavaCalculus is a Maths String Java Package that has the below:
+1. Expression Interface:To obtain the value of a String Equation.
+    - Taken initially from StackOverflow. Code written by StackOverflow User:Boann  and 
+    - Code written by StackOverflow User:Mike Scholtes
+    - Free Source
+2. Differentiation Interface:To obtain the Symbolic Differentiation of an String Equation.
+3. Integration Interface:To obtain the Symbolic Integration of an String Equation.
+4. Algebra Interface :To obtain the expansion of an Algebraic multiplication of 2 equations.
+5. Function Composition Interface :To obtain the Function Composition of 2 equations.
+
+JavaCalculus is about 12,000 Lines of Lambda Calculus Code which does not use Numeric Analysis Methods (Newton Raphso etc).
+This is just High School Mathematics Maths Formulae with Java Lambda Calculus Code.
+This has been been tested for:
+1. Constant Coefficients (Integer , Double )
+2. X Term (Can be any primary Variable: z, a1, ao, an, a123 etc)
+
+Work In Progress (Future Development):
+1. Independent Constants: dy/dx(ax+b) where a & b are independent constants with respect to x.
+2. Functions
+3. Parenthesis
+
+Development and Test Environment: Windows XP and Java 7 & Neteans 8.2
+
+Testing has been rigorous with the TestHarness Testing 216 Types(Formats) of Equations 
+This can be checked out by the User by running the Function (method):mainRegresssionDiffTest  and mainRegressionIntegrTest
+
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
