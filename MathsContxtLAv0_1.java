@@ -9,6 +9,9 @@ import static Calculus.Usage.mainRegressionIntegrTest;
 import static Calculus.Usage.mainRegresssionDiffTest;
 import static Calculus.Usage.mainUser;
 import static Calculus.Usage.mainAlgebraUser;
+import static Calculus.Usage.mainDiff;
+import static Calculus.Usage.mainIntegral;
+import static Calculus.Usage.FailingTestHarnessDiff;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.HashMap;
@@ -11343,13 +11346,12 @@ public class MathsContxtLAv0_1 {
     }
 
     public static void main(String... args) {
-        //Starting Test Case :21 to 34, 39,40 , 101 to 104, 201 to 209
         String StartMyTestCase = "All";//Test Case Number : Optiona :All or a Single Number
         String EndMyTestCase = "110007";//Test Case Number : Optiona :All or a Single Number
-        int MaxDiffOrder = 5; // Maximum Differentiation Order : 7 :Integration Order : 5;
+        int MaxDiffOrder = 5; // Maximum Differentiation Order (with Answers): 5 :Integration Order (with Answers): 5;
         String TestCaseType = "LimitedRegression";//Test Suite Type:Individual OR LimitedRegression OR Regression
         TestHarness MyTestData = new TestHarness(14, StartMyTestCase, EndMyTestCase, TestCaseType);
-        System.out.println(ConsoleColors.BLUE + "Starting Test Case: 196 " + ConsoleColors.RESET);
+        System.out.println(ConsoleColors.BLUE + "Starting Test Case:100 End TestCase 110007 " + ConsoleColors.RESET);
         System.out.println(ConsoleColors.BLUE + "Sanity Test Cases: 100 to 104 " + ConsoleColors.RESET);
         System.out.println(ConsoleColors.BLUE + "Unit Test Cases: 5019 to 5042 " + ConsoleColors.RESET);
         System.out.println(ConsoleColors.BLUE + "Names Test Cases: 10001 to 10005 " + ConsoleColors.RESET);
@@ -11360,16 +11362,16 @@ public class MathsContxtLAv0_1 {
         System.out.println(ConsoleColors.BLUE + "Parenthesis Test Case: 80001 to 80012 " + ConsoleColors.RESET);
         System.out.println(ConsoleColors.BLUE + "Function Test Case: 90001 " + ConsoleColors.RESET);
         System.out.println(ConsoleColors.BLUE + "Function Argument Test Case: 100001 " + ConsoleColors.RESET);
-        System.out.println(ConsoleColors.BLUE + "Software Engg Test Case: 110001 " + ConsoleColors.RESET);
+        System.out.println(ConsoleColors.BLUE + "Software Engg Test Case: 110001 to 110007" + ConsoleColors.RESET);
         //Uncomment Below Line for Stand Alone Differentiation Regression Suite
         //mainRegresssionDiffTest(MaxDiffOrder, MyTestData);
 
         //Uncomment Below Line for Stand Alone Integration Regression Suite
         //mainRegressionIntegrTest(MaxDiffOrder, MyTestData);
-        //Uncomment Below Line for Differentiation Integration Mapping
-        //mainDiffIntegreTest(FailingTestHarnessDiff(TestCase), MaxDiffOrder, MyTestData);
-        //Uncomment Below Line for Integration Differentiation  Mapping
-        //mainIntegreDiffTest(FailingTestHarnessDiff(TestCase), MaxDiffOrder, MyTestData);
+        
+        //mainDiff(args);
+        //mainIntegral(args);
+        
         //Uncomment Below Line for User String Usage
         //mainUser(args);
         mainAlgebraUser(args);
