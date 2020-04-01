@@ -42,6 +42,14 @@ Development and Test Environment: Windows XP and Java 7 & Neteans 8.2
 Testing has been rigorous with the TestHarness Testing 216 Types(Formats) of Equations 
 This can be checked out by the User by running the Function (method):mainRegresssionDiffTest  and mainRegressionIntegrTest
 
+##### User Intructions:
+Run the function mainUser(args) and mainAlgebraUser(args); in File: MathsContxtLAv0_1.java
+
+mainUser(args) does the Differentiation and Integration Interactively.
+mainAlgebraUser(args) does the multiplication of 2 equations Algebraicly. It also does the Function Composition (FoG) of the 2 equations.
+
+
+
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
