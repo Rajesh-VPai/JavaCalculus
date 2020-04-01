@@ -72,8 +72,8 @@ public class Usage {
     static int[] EqnSolOrder;
     static int TestCase = 0;
     static int EndTestCase = 0;
-    static int LastTestCaseHarness=0;
-    static int TestCaseLoopTimes = 0;
+    static int LastTestCaseHarness=110007;
+    static int TestCaseLoopTimes = 110007;
     static String EqnRegressionDiffStatus = "All RED";
     static String EqnRegressionIntegreStatus = "All RED";
     static String TestCaseName = "Standard";
@@ -89,131 +89,27 @@ public static String FailingLowLevelUnitTestCases() {
         //Failing Test Cases: Low Level Analysed/Debugged Failure
         //Simple Basic Equation
         //String Exprn = ;
-        //Desired Output:main:Result(Simplified Diff Equation)(13 th order)=> 
         //Simple Basic Equation
-        //String Exprn = "x^8 + x^5 + x^4 - x - 25.0";
-        //Desired Output:main: x=-20.0 Exprn=x^8+x^5+x^4-x-25.0
-        //Desired Output:main: x=-8.0 Basic Simple Exprn=
-        //Desired Output:main:Result(Diff Equation)(13 th order)=> 
-        //Desired Output:main:Result(Simplified Diff Equation)(13 th order)=>
-        //Desired Output:main:Result(Simplified Diff Equation)(13 th order)=> 
+        String Exprn = "x^8 + x^5 + x^4 - x - 25.0";
         //Palindromic String-Equation Test
         //String Exprn = " 25.0 + x - x^4 -x^5 -x^8 + x^8 + x^5 + x^4 - x - 25.0";
-        //Desired Output:main:Result(Simplified Diff Equation)(1 th order)=> +1.0-4.0*x^3.0-5.0*x^4.0-8.0*x^7.0+8.0*x^7.0+5.0*x^4.0+4.0*x^3.0-1.0
-        //Desired Output:
-        //Desired Output:
-        //Desired Output:
         //Palindromic String-Equation Test-Rearranged
         //String Exprn = " x^8 -x^8 + x^5 -x^5 + x^4 - x^4 + 25.0 + x - x - 25.0";
-        //String Exprn="8.0*x^7.0-8.0*x^7.0+5.0*x^4.0-5.0*x^4.0+4.0*x^3.0-4.0*x^3.0";
-        //String Exprn="40320.0*x-40320.0*x+40320.0*x+2.0*x+4.0*x";
-        //String Exprn="40320.0*x-40320.0*x+40320.0*x+2.0*x+4.0*x";
-        //String Exprn = "1680.0*x^4.0-336.0-1680.0*x^4.0+120.0*x-1400.0*x^4.0+120.0*x-1400.0*x^4.0+120.0*x-1440.0*x^4.0+60.0*x^5.0-5.0-5.0-1680.0*x^4.0+1400.0*x^4.0+10.0*x-25.0*x^4.0+120.0*x-120.0*x^5.0-1680.0*x^4.0+120.0*x-1680.0*x^4.0+120.0*x-120.0*x+11760.0*x^4.0+120.0*x-120.0*x+24.0-24.0";
-        //String Exprn = "1680.0*x^4.0-1680.0*x^4.0+120.0*x-120.0*x+24.0-24.0";
-        //Desired Output:main: x=-20.0 Basic Simple Exprn=x^8.0-x^8.0+x^5.0-x^5.0+x^4.0-x^4.0+25.0+x-x-25.0
-        //Desired Output:main:Result(Diff Equation)(1 th order)=> 8.0*x^7.0-8.0*x^7.0+5.0*x^4.0-5.0*x^4.0+4.0*x^3.0-4.0*x^3.0+0.0+1.0-1.0-0.0
-        //Desired Output:main:Result(Diff Equation)(7 th order)=> 20160.0*2.0*x^1.0-20160.0*2.0*x^1.0
-        //Desired Output:main:Result(Simplified Diff Equation)(8 th order)=> 
-        //String Exprn="1.0-4.0*x^3.0-5.0*x^4.0-8.0*x^7.0+8.0*x^7.0+5.0*x^4.0+4.0*x^3.0-1.0";
-        //Desired Output:
-        //Desired Output:
-        //Desired Output:
-        //Desired Output:
-        //String Exprn = " x^8 - x^8 + x^5 -x^5 + x^4 - x^4 - x + x +37 - 25.0 + 25.0";
-        //Desired Output:main:Result(Diff Equation)(8 th order)=> +40320.0-40320.0
-        //Desired Output:main:Result(Diff Value)=0.0
         //Test for LookAheadFuncMultDiv
         //Straight Numbers Leading + Trailing Co-eff :(LookAheadFuncMultDiv & ConstExprn)
         //(Polynomials)
         //String Exprn = "1/x^8 + 1/x^5 + 1/x^4 - 25.0";
         //Functions 
         //String Exprn = "(2*x+1)*x^9 + x^7 + x^5 + x^2 - sin(x^2)- sin(2*x+5) ";
-        //String Exprn = "(2*x+1)*x^9 + x^7 + x^5 + x^2 - sin(x^2)- sin(2*x) ";
-        //String Exprn = "(2*x+1)*x^9 + x^7 + x^5 + x^2 ";
-        //Desired Output:main: x=-20.0 Basic Simple Exprn=(2.0*x+1.0*x^()x+7.0)x^7.0+x^5.0+x^2.0-sin(0.0)-sin(0.0)*5.0))
-        //Desired Output:1st Order Failure
-        //String Exprn = "(2*x+1)*x^7 + x^7 + x^5 + x^2 - sin(x^2)- sin(2*x+ 5) ";
-        //Desired Output:main: x=-20.0 Basic Simple Exprn=(2.0*x+1.0*x^7.0+x^7.0+x^5.0+x^2.0-sin(0.0)-sin(0.0)*5.0)
-        //Desired Output:1st Order Failure
-        //String Exprn = "x^7 + x^7 + x^5 + x^2 - sin(x^2)- sin(2*x+ 5) ";
-        //Desired Output:main: x=-20.0 Basic Simple Exprn=x^7.0+x^7.0+x^5.0+x^2.0-sin(0.0)-sin(0.0)*5.0
-        //Desired Output:1st Order Failure
         //String Exprn = "sin(2.0*7.0*x)+25.0";
-        //Desired Output:main: x=-20.0 Exprn=sin(2.0*7.0*x)+25.0
-        //Desired Output:main:Result(Diff Equation)(7 th order)=> +-7529536.0*14.0*cos(14.0*x)
-        //Desired Output:main:Result(Simplified Diff Equation)(7 th order)=> -1.05413504E8*cos(14.0*x)
-        //String Exprn="(2.0)*cos(2.0*x+5.0)";
-        //Desired Output:main: x=-20.0 Basic Simple Exprn=cos(2.0*x+5.0)*(2.0)*
-        //Desired Output:Result(Simplified Diff Equation)(1 th order)=> -1.0*sin(2.0*x+5.0)*(2.0)*
-        //Desired Output:main: x=-19.0 Basic Simple Exprn=-1.0*sin(2.0*x+5.0)*()*       
         //Parenthesis
-        String Exprn = "(x^8+2*x+1) + x^7  - sin(x^4+ 2*x+ 5) ";
-        //String Exprn="(8.0*x^7.0+2.0)+7.0*x^6.0--1.0*(4.0*x^3.0+2.0)*cos(x^4.0+2.0*x+5.0)";
-        //Desired Output:main: x=-20.0 Basic Simple Exprn=(2.0*x+1.0)+x^7.0-sin(2.0*x+5.0)
-        //Desired Output:main:Result(Diff Equation)(1 th order)=> (2.0+0.0)+7.0*x^6.0-cos(2.0*x+5.0)*(2.0+0.0)
-        //Desired Output:main:Result(Simplified Diff Equation)(1 th order)=> (2.0)+7.0*x^6.0-cos(-2.0*x+5.0*(2.0)*)
-        // String Exprn="(2.0+0.0)+7.0*x^6.0-cos(2.0*x+5.0)*(2.0+0.0)";
-        //Desired Output:main: x=-20.0 Basic Simple Exprn=(2.0)+7.0*x^6.0-cos(-2.0*x+5.0*(2.0)*)
-        //Desired Output:
-        //Desired Output:
-        //String Exprn = "2.0*(2.0+0.0)*-sin(2.0*x+5.0)";
-        //Desired Output:main: x=-20.0 Basic Simple Exprn=2.0*(7.0)*sin(2.0*x+5.0)
-        //Desired Output:main:Result(Diff Equation)(13 th order)=> 2.0*(7.0)*(2.0)*(2.0)*(2.0)*(2.0)*(2.0)*(2.0)*(2.0)*(2.0)*(2.0)*(2.0)*(2.0)*(2.0)*(2.0+0.0)*cos(2.0*x+5.0)
-        //Desired Output:main:Result(Simplified Diff Equation)(13 th order)=> 2.0*(7.0)*(2.0)*(2.0)*(2.0)*(2.0)*(2.0)*(2.0)*(2.0)*(2.0)*(2.0)*(2.0)*(2.0)*(2.0)*(2.0)*cos(2.0*x+5.0)
-        //String Exprn="(14.0)*-1.0*(14.0)*(14.0)*-1.0*(14.0)*(14.0)*-1.0*(14.0)*(14.0)*-1.0*(14.0)*(14.0)*-1.0*(14.0)*(14.0)*-1.0*(14.0)*sin(14.0*x)";
-        //Desired Output:
-        //Desired Output:
-        //Desired Output:
-        //Desired Output:
-        //String Exprn="14.0*-1.0*14.0*14.0*-1.0*14.0*14.0*-1.0*14.0*14.0*-1.0*14.0*14.0*-1.0*14.0*14.0*-1.0*14.0*sin(14.0*x)";
-        //Desired Output:main: x=-20.0 Basic Simple Exprn=5.6693912375296E13*sin(14.0*x)
-        //Desired Output:main:Result(Diff Equation)(1 th order)=> 13.0*sinx*x
-        //Desired Output:
-        //Desired Output:
-        // String Exprn="(2.0*x+5.0)*x^7.0";
-        //Desired Output:main: x=-20.0 Basic Simple Exprn=(2.0)+7.0*x^6.0-cos(-2.0*x+5.0*(2.0)*)
-        //Desired Output:
-        //Desired Output:
-        // String Exprn="(2.0*x+5.0)/x^7.0";
-        //Desired Output:main: x=-20.0 Basic Simple Exprn=(2.0)+7.0*x^6.0-cos(-2.0*x+5.0*(2.0)*)
-        //Desired Output:
-        //Desired Output:
-        //String Exprn="x^7.0*(2.0+0.0)+7.0*x^6.0*(2.0*x+5.0)";
-        //Desired Output:
-        //Desired Output:
-        //Desired Output:
-        //Desired Output:
+        //String Exprn = "(x^8+2*x+1) + x^7  - sin(x^4+ 2*x+ 5) ";
         //Parenthesis with Constants
-        
-        //String Exprn ="5";
         //String Exprn="(114.70000000000073*(x-11)+28843.09)*(x-1)*(x-2)*(x-3)*(x-4)*(x-5)*(x-6)*(x-7)*(x-8)*(x-9)*(x-10)*(1.0)*(x-12)*(x-13)*(x-14)*(x-15)*(x-16)*(x-17)*(x-18)*(x-19)*(x-20)*(x-21)";
-        //String Exprn="(114.70000000000073*(x-11)+28843.09)*(x-1)";
-        //String Exprn="(285.10999999999694*(x-1)+29516.49)*(x-2)*(x-3)*(x-4)*(x-5)*(x-6)*(x-7)*(x-8)";
-        //String Exprn="285.10999999999694/(x-1)+29516.49";
-        //String Exprn="(14.0)*-1.0*(14.0)*(14.0)*-1.0*(14.0)*(14.0)*-1.0*(14.0)*(14.0)*-1.0*(14.0)*(14.0)*-1.0*(14.0)*(14.0)*-1.0*(14.0)";
-        //Desired Output:main: x=-20.0 Basic Simple Exprn=(14.0)*-1.0*(14.0)*(14.0)*-1.0*(14.0)*(14.0)*-1.0*(14.0)*(14.0)*-1.0*(14.0)*(14.0)*-1.0*(14.0)*(14.0)*-1.0*(14.0)
-        //Desired Output:main: x=-20.0 Basic Simple (Exprn Value)=5.6693912375296E13
-        //Desired Output:main:Result(Diff Equation)(1 th order)=> (14.0)*-1.0*(14.0)*(14.0)*-1.0*(14.0)*(14.0)*-1.0*(14.0)*(14.0)*-1.0*(14.0)*(14.0)*-1.0*(14.0)*(14.0)*-1.0*(14.0)*
-        //Desired Output:main:Result(Simplified Diff Equation)(1 th order)=>
-        //String Exprn="(14.0)*(14.0)*(-1.0)*(14.0)";
-        //Desired Output:main: x=-20.0 Basic Simple Exprn=(14.0)*(14.0)*(-1.0)*(14.0)
-        //Desired Output:main:Result(Diff Equation)(1 th order)=> (14.0)*(14.0)*(-1.0)*(14.0)*
-        //Desired Output:main:Result(Diff Value)=-0.0
-        //Desired Output:main:Result(Simplified Diff Equation)(1 th order)=> 
-        //Desired Output:main:Result(Simplified Diff Value)=0.0
         //Addition Subtraction
         //String Exprn = "(x^8+2*x+1) + x^7  - (x^4+ 2*x+ 5) ";
-        //String Exprn = "(336.0*x^5.0)+210.0*x^4.0-(12.0*x)";
-        //Desired Output:
-        //Desired Output:
-        //Desired Output:
-        //Desired Output:
         //Multiplication Division
         //String Exprn = "(x^8+2*x+1) + x^7  - (x^4+ 2*x+ 5) ";
-        //Desired Output:
-        //Desired Output:
-        //Desired Output:
-        //Desired Output:
         //Parenthesis within Parenthesis
         //Add Operation
         //Subtraction
@@ -221,10 +117,6 @@ public static String FailingLowLevelUnitTestCases() {
         //Multiplication
         //Constants
         //String Exprn="11.0*12.0*x*13.0*14.0";
-        //Desired Output:
-        //Desired Output:
-        //Desired Output:
-        //Desired Output:
         return Exprn;
     }
 public static String FailingTestHarnessDiff(String AlgoName,int j) {
@@ -385,7 +277,7 @@ public static String FailingTestHarnessDiff(String AlgoName,int j) {
         StrexpIntegrExpress = Exprn;
 
         int i = 1;
-        for (double x = -20, y = 7; i < 2; y++, x++, i++) {
+        for (double x = -20, y = 7; i < 5; y++, x++, i++) {
             variables.put(DiffWithRespTo, x);
             variables.put("y", y);
             variables.put(Constant, 5.0);
@@ -408,93 +300,6 @@ public static String FailingTestHarnessDiff(String AlgoName,int j) {
             System.out.println(" main:Result(Expn Value)=" + expValue.eval());
 
             System.out.print(System.lineSeparator());
-        }
-    }
-
-    public static void mainDiffIntegral(String[] args) {
-        Map<String, Double> variables = new HashMap<>();
-        Map<String, String> variablesDiff = new HashMap<>();
-        Map<String, String> variablesIntegr = new HashMap<>();
-        //String Exprn = eatAll(TestCases(), ' ');
-        //String Exprn = eatAll(HighLevelUnitTestCases(), ' ');
-        //String Exprn = eatAll(FailingHighLevelUnitTestCases(), ' ');
-        String Exprn = eatAll(FailingLowLevelUnitTestCases(), ' ');
-        SimpleExpression expSimple;
-        Expression expValue;
-        DiffExpr exp;
-        IntegrExpr expIntgr;
-
-        MyFuncExpress();
-        MyFuncDiff();
-        MyFuncSimple();
-        MyFuncIntegr();
-
-        String DiffWithRespTo = "x";
-        String Constant = "C";
-        //String DiffWithRespTo = "Xn";
-        variablesDiff.put(DiffWithRespTo, DiffWithRespTo);
-
-        String StrexpIntegrExpress = "";
-        String StrexpSimpleExpress = "";
-        variablesIntegr.put(DiffWithRespTo, DiffWithRespTo);
-        variablesIntegr.put(Constant, Constant);
-
-        int i = 1;
-        for (double x = -20, y = 7; i < 14; y++, x++, i++) {
-            variables.put(DiffWithRespTo, x);
-            variables.put("y", y);
-            variables.put(Constant, 5.0);
-            for (int j = 1; j <= i; j++) {
-                System.out.println("main: x=" + x + " Exprn=" + Exprn);
-                expSimple = parseSimple(Exprn, variables, variablesDiff, DiffWithRespTo);
-                expValue = parse(Exprn, variables, DiffWithRespTo);
-                System.out.println(" main:Result(Expn Value)=" + expValue.eval());
-
-                StrexpSimpleExpress = expSimple.SimpleExpr();
-
-                System.out.println("main: x=" + x + " Basic Simple Exprn=" + StrexpSimpleExpress);
-                expValue = parse(StrexpSimpleExpress, variables, DiffWithRespTo);
-                System.out.println("main: x=" + x + " Basic Simple (Exprn Value)=" + expValue.eval());
-
-                exp = parseDiff(StrexpSimpleExpress, variables, variablesDiff, DiffWithRespTo);
-                StrexpSimpleExpress = exp.DiffExpr();
-                System.out.println(" main:Result(Diff Equation)(" + j + " th order)=> " + StrexpSimpleExpress);
-                expValue = parse(StrexpSimpleExpress, variables, DiffWithRespTo);
-                System.out.println(" main:Result(Diff Value)=" + expValue.eval());
-
-                expSimple = parseSimple(StrexpSimpleExpress, variables, variablesDiff, DiffWithRespTo);
-                StrexpSimpleExpress = expSimple.SimpleExpr();
-                System.out.println(" main:Result(Simplified Diff Equation)(" + i + " th order)=> " + StrexpSimpleExpress);
-                expValue = parse(StrexpSimpleExpress, variables, DiffWithRespTo);
-                System.out.println(" main:Result(Simplified Diff Value)=" + expValue.eval());
-                System.out.print(System.lineSeparator());
-                expValue = parse(Exprn, variables, DiffWithRespTo);
-                System.out.println(" main:Result(Expn Value)=" + expValue.eval());
-                Exprn = StrexpSimpleExpress;
-            }
-            StrexpIntegrExpress = StrexpSimpleExpress;
-            for (int j = 1; j <= i; j++) {
-                System.out.println("main: x=" + x + " Basic Simple Exprn=" + StrexpIntegrExpress);
-                expValue = parse(StrexpIntegrExpress, variables, DiffWithRespTo);
-                System.out.println("main: x=" + x + " Basic Simple (Exprn Value)=" + expValue.eval());
-
-                expIntgr = parseIntegr(StrexpIntegrExpress, variables, variablesDiff, DiffWithRespTo);
-                StrexpIntegrExpress = expIntgr.IntegrExpr();
-                System.out.println(" main:Result(Integral Equation)(" + j + " th order)=> " + StrexpIntegrExpress);
-                expValue = parse(StrexpIntegrExpress, variables, DiffWithRespTo);
-                System.out.println(" main:Result(Integral Value)=" + expValue.eval());
-
-                expSimple = parseSimple(StrexpIntegrExpress, variables, variablesDiff, DiffWithRespTo);
-                StrexpIntegrExpress = expSimple.SimpleExpr();
-                System.out.println(" main:Result(Simplified Integral Equation)(" + i + " th order)=> " + StrexpIntegrExpress);
-                expValue = parse(StrexpIntegrExpress, variables, DiffWithRespTo);
-                System.out.println(" main:Result(Simplified Integral Value)=" + expValue.eval());
-                expValue = parse(Exprn, variables, DiffWithRespTo);
-                System.out.println(" main:Result(Expn Value)=" + expValue.eval());
-
-                System.out.print(System.lineSeparator());
-            }
-            Exprn = StrexpIntegrExpress;
         }
     }
 
@@ -1029,341 +834,8 @@ public static String FailingTestHarnessDiff(String AlgoName,int j) {
         }
         System.out.print(System.lineSeparator());
     }
-
-    public static void mainIntegreDiffTest(String Exprn, int MaxOrder, TestHarness TestData) {
-
-        Map<String, Double> variables = new HashMap<>();
-        Map<String, String> variablesDiff = new HashMap<>();
-        //String Exprn = eatAll(TestCases(), ' ');
-        //String Exprn = eatAll(HighLevelUnitTestCases(), ' ');
-        //String Exprn = eatAll(FailingHighLevelUnitTestCases(), ' ');
-        //String Exprn = eatAll(FailingLowLevelUnitTestCases(), ' ');
-        //Exprn = eatAll(Exprn, ' ');
-        SimpleExpression expSimple;
-        Expression expValue;
-        DiffExpr exp;
-        IntegrExpr expIntegr;
-
-        MyFuncExpress();
-        MyFuncDiff();
-        MyFuncSimple();
-
-        String Constant = "C";
-        //String DiffWithRespTo = "Xn";
-        variablesDiff.put(DiffWithRespTo, DiffWithRespTo);
-
-        String StrexpSimpleExpressMap1 = "";
-        String StrexpDiffExpress = "";
-        String StrexpSimpleExpressMap2 = "";
-
-        double ExprnexpValue = 0;
-        double DblexpValueMap1 = 0;
-        double DblexpDiffValue = 0;
-        double DblexpValueMap2 = 0;
-        int j = TestCase;
-        boolean TestCasePassStrFlag = false;
-        boolean TestCasePassValFlag = false;
-        boolean TestCasePassHighLevelFlag = true;
-        HashMap<Integer, String> FailedTestCases = new HashMap<Integer, String>();
-        int MaxIndexFail = 0;
-        int MaxOrder1 = MaxOrder;
-        int i = 1;
-        while (j <= TestCaseLoopTimes) {
-            EqnUnderTest = "";
-            String TempExprn = "";
-
-            TempExprn = FailingTestHarnessDiff("mainIntegreDiffTest",j);
-            if (MaxOrder == -1) {
-                MaxOrder1 = MaxDiffOrder; //From Test Case
-            } else if (MaxOrder > MaxDiffOrder) {
-                MaxOrder1 = MaxDiffOrder;
-            } else {
-                MaxOrder1 = MaxOrder;
-            }
-
-            if ((!EqnUnderTest.equalsIgnoreCase("")) && (TempExprn != null) && (!TempExprn.equalsIgnoreCase(""))) {
-                Exprn = eatAll(TempExprn, ' ');
-            } else {
-                j = RegressionControl(j);
-                System.out.println(ConsoleColors.RED + "mainDiffTest: j=" + j + " TestCase=" + TestCase);
-                continue;
-            }
-
-            if ((!EqnUnderTest.equalsIgnoreCase("")) && (TempExprn != null) && (!TempExprn.equalsIgnoreCase(""))) {
-                Exprn = eatAll(TempExprn, ' ');
-            } else {
-                continue;
-            }
-            System.out.println(ConsoleColors.BLUE + "Test Case " + TestCase + " Exprn=" + Exprn + ConsoleColors.RESET);
-            System.out.println(ConsoleColors.BLUE + "Test Case Name=" + TestCaseName + ConsoleColors.RESET);
-            System.out.println(ConsoleColors.BLUE + "Test Case Name=" + TestCaseMatrixID + ConsoleColors.RESET);
-            System.out.println(ConsoleColors.BLUE + "Diff Regression Status : Test Case should be " + EqnRegressionDiffStatus + ConsoleColors.RESET);
-            System.out.println(ConsoleColors.BLUE + "Integral Regression Status : Test Case should be " + EqnRegressionIntegreStatus + ConsoleColors.RESET);
-            i = 1;
-            TestCasePassHighLevelFlag=true;
-            String StageMapping = "";
-
-            try {
-                for (double x = 1, y = 7; i < MaxOrder; y++, x++, i++) {
-                    TestCasePassStrFlag = false;
-                    TestCasePassValFlag = false;
-                    variables.put(DiffWithRespTo, x);
-                    variables.put("y", y);
-                    variables.put(Constant, 5.0);
-                    StageMapping = "Basic Mapping";
-                    System.out.println("main: " + DiffWithRespTo + "=" + x + " Exprn=" + Exprn);
-                    expSimple = parseSimple(Exprn, variables, variablesDiff, DiffWithRespTo);
-                    System.out.println(" main:Result(Expn Value)=" + ExprnexpValue);
-                    expValue = parse(Exprn, variables, DiffWithRespTo);
-                    ExprnexpValue = expValue.eval();
-                    StrexpSimpleExpressMap1 = expSimple.SimpleExpr();
-
-                    System.out.println("main: " + DiffWithRespTo + "=" + x + " Basic Simple Exprn=" + StrexpSimpleExpressMap1);
-                    expValue = parse(StrexpSimpleExpressMap1, variables, DiffWithRespTo);
-                    DblexpValueMap1 = expValue.eval();
-                    System.out.println("main: " + DiffWithRespTo + "=" + x + " Basic Simple (Exprn Value)=" + DblexpValueMap1);
-
-                    StageMapping = "Integration";
-                    expIntegr = parseIntegr(StrexpSimpleExpressMap1, variables, variablesDiff, DiffWithRespTo);
-                    StrexpDiffExpress = expIntegr.IntegrExpr();
-                    System.out.println(" main:Result(Diff Equation)(" + i + " th order)=> " + StrexpDiffExpress);
-                    expValue = parse(StrexpDiffExpress, variables, DiffWithRespTo);
-                    DblexpDiffValue = expValue.eval();
-                    System.out.println("main: " + DiffWithRespTo + "=" + x + " Result(Diff Value)=" + DblexpDiffValue);
-
-                    StageMapping = "Differentiation";
-                    exp = parseDiff(StrexpDiffExpress, variables, variablesDiff, DiffWithRespTo);
-                    StrexpDiffExpress = exp.DiffExpr();
-                    System.out.println(" main:Result(Diff Equation)(" + i + " th order)=> " + StrexpDiffExpress);
-                    expValue = parse(StrexpDiffExpress, variables, DiffWithRespTo);
-                    DblexpDiffValue = expValue.eval();
-                    System.out.println("main: " + DiffWithRespTo + "=" + x + " Result(Diff Value)=" + DblexpDiffValue);
-
-                    StageMapping = "Differentiation Mapping";
-                    expSimple = parseSimple(StrexpDiffExpress, variables, variablesDiff, DiffWithRespTo);
-                    StrexpSimpleExpressMap2 = expSimple.SimpleExpr();
-                    System.out.println(" main:Result(Simplified Diff Equation)(" + i + " th order)=> " + StrexpSimpleExpressMap2);
-                    expValue = parse(StrexpSimpleExpressMap2, variables, DiffWithRespTo);
-                    DblexpValueMap2 = expValue.eval();
-                    System.out.println("main: " + DiffWithRespTo + "=" + x + " Result(Simplified Diff Value)=" + expValue.eval());
-                    System.out.print(System.lineSeparator());
-                    if (PassFailTestCaseString(TestCase, i, "Diff", Exprn, StrexpSimpleExpressMap1, StrexpDiffExpress, StrexpSimpleExpressMap2, EqnUnderTest, EqnSolArrayMap3[i], EqnSolArrayIntegrAlone[i], EqnSolArrayMap4[i])) {
-                        System.out.println(ConsoleColors.GREEN + " main:Test Case Status=" + "Pass STRING TEST Complete" + ConsoleColors.RESET);
-                        TestCasePassStrFlag = true;
-                    } else {
-                        System.out.println(ConsoleColors.RED + " main:Test Case Status=" + "FAIL STRING TEST Complete" + ConsoleColors.RESET);
-                        if(TestCasePassHighLevelFlag==true)
-                            TestCasePassHighLevelFlag=false;
-                    }
-
-                    if (PassFailTestCaseValue(TestCase, i, "Diff",Exprn, ExprnexpValue, DblexpValueMap1, DblexpDiffValue, DblexpValueMap2,variables)) {
-                        System.out.println(ConsoleColors.GREEN + " main:Test Case Status=" + "Pass VALUE TEST Complete" + ConsoleColors.RESET);
-                        TestCasePassValFlag = true;
-                    } else {
-                        System.out.println(ConsoleColors.RED + " main:Test Case Status=" + "FAIL VALUE TEST Complete" + ConsoleColors.RESET);
-                        if(TestCasePassHighLevelFlag==true)
-                            TestCasePassHighLevelFlag=false;
-                    }
-                    Exprn = StrexpSimpleExpressMap2;
-                    System.out.print(System.lineSeparator());
-
-                    if ((TestCasePassStrFlag == true) && (TestCasePassValFlag == true))
-                ;//Do Nothing : Test Case Passed
-                    else {
-                        String Temp = FailedTestCases.get(MaxIndexFail);
-                        String HashVal = "";
-                        if ((Temp != null) && (!Temp.equalsIgnoreCase(""))) {
-                            HashVal = Temp + "TestCase=" + TestCase + ":Order=" + (i - 1) + ":Str=" + TestCasePassStrFlag + ":Val=" + TestCasePassValFlag;
-                        } else {
-                            HashVal = "TestCase=" + TestCase + ":Order=" + (i - 1) + ":Str=" + TestCasePassStrFlag + ":Val=" + TestCasePassValFlag;
-                        }
-                        FailedTestCases.put(MaxIndexFail, HashVal);
-                        
-                    }
-                }
-            } catch (Exception MyException) {
-                System.out.print(System.lineSeparator());
-                System.out.print(System.lineSeparator());
-                MyException.printStackTrace();
-                System.out.println(ConsoleColors.RED + "TestCase " + TestCase + " Failed at Order=" + i + " due to Exception at Stage=" + StageMapping + "." + ConsoleColors.RESET);
-                System.out.print(System.lineSeparator());
-            }
-            System.out.print(System.lineSeparator());
-            if (TestCasePassHighLevelFlag==false) MaxIndexFail++;
-        }
-        System.out.println(ConsoleColors.RED + "mainIntegreDiffTest: TestCase Summary : Total Failed=" + MaxIndexFail + " Failed Test Cases are:" + ConsoleColors.RESET);
-        for (int y = 0; y < MaxIndexFail; y++) {
-            System.out.print(ConsoleColors.RED + " " + FailedTestCases.get(y) + ", " + ConsoleColors.RESET);
-            if ((y >= 10) && (y % 5 == 0)) {
-                System.out.print(System.lineSeparator());
-            }
-        }
-        System.out.print(System.lineSeparator());
-}
-    public static void mainDiffIntegreTest(String Exprn, int MaxOrder, TestHarness TestData) {
-
-        Map<String, Double> variables = new HashMap<>();
-        Map<String, String> variablesDiff = new HashMap<>();
-        //String Exprn = eatAll(TestCases(), ' ');
-        //String Exprn = eatAll(HighLevelUnitTestCases(), ' ');
-        //String Exprn = eatAll(FailingHighLevelUnitTestCases(), ' ');
-        //String Exprn = eatAll(FailingLowLevelUnitTestCases(), ' ');
-        //Exprn = eatAll(Exprn, ' ');
-        SimpleExpression expSimple;
-        Expression expValue;
-        DiffExpr exp;
-        IntegrExpr expIntegr;
-
-        MyFuncExpress();
-        MyFuncDiff();
-        MyFuncSimple();
-
-        String Constant = "C";
-        //String DiffWithRespTo = "Xn";
-
-        String StrexpSimpleExpressMap1 = "";
-        String StrexpDiffExpress = "";
-        String StrexpSimpleExpressMap2 = "";
-
-        double ExprnexpValue = 0;
-        double DblexpValueMap1 = 0;
-        double DblexpDiffValue = 0;
-        double DblexpValueMap2 = 0;
-        int j = TestCase;
-        boolean TestCasePassStrFlag = false;
-        boolean TestCasePassValFlag = false;
-        boolean TestCasePassHighLevelFlag = true;
-        HashMap<Integer, String> FailedTestCases = new HashMap<Integer, String>();
-        int MaxIndexFail = 0;
-        int MaxOrder1 = MaxOrder;
-        int i = 1;
-        while (j <= TestCaseLoopTimes) {
-            EqnUnderTest = "";
-            String TempExprn = "";
-
-            TempExprn = FailingTestHarnessDiff("mainDiffIntegreTest",j);
-            if (MaxOrder == -1) {
-                MaxOrder1 = MaxDiffOrder; //From Test Case
-            } else if (MaxOrder > MaxDiffOrder) {
-                MaxOrder1 = MaxDiffOrder;
-            } else {
-                MaxOrder1 = MaxOrder;
-            }
-
-            if ((!EqnUnderTest.equalsIgnoreCase("")) && (TempExprn != null) && (!TempExprn.equalsIgnoreCase(""))) {
-                Exprn = eatAll(TempExprn, ' ');
-            } else {
-                j = RegressionControl(j);
-                System.out.println(ConsoleColors.RED + "mainDiffTest: j=" + j + " TestCase=" + TestCase);
-                continue;
-            }
-            System.out.println(ConsoleColors.BLUE + "Test Case " + TestCase + " Exprn=" + Exprn + ConsoleColors.RESET);
-            System.out.println(ConsoleColors.BLUE + "Test Case Name=" + TestCaseName + ConsoleColors.RESET);
-            System.out.println(ConsoleColors.BLUE + "Test Case Name=" + TestCaseMatrixID + ConsoleColors.RESET);
-            System.out.println(ConsoleColors.BLUE + "Diff Regression Status : Test Case should be " + EqnRegressionDiffStatus + ConsoleColors.RESET);
-            System.out.println(ConsoleColors.BLUE + "Integral Regression Status : Test Case should be " + EqnRegressionIntegreStatus + ConsoleColors.RESET);
-            i = 1;
-            TestCasePassHighLevelFlag=true;
-            String StageMapping = "";
-            variablesDiff.put(DiffWithRespTo, DiffWithRespTo);
-
-            try {
-                for (double x = 1, y = 7; i < MaxOrder; y++, x++, i++) {
-                    TestCasePassStrFlag = false;
-                    TestCasePassValFlag = false;
-                    variables.put(DiffWithRespTo, x);
-                    variables.put("y", y);
-                    variables.put(Constant, 5.0);
-                    StageMapping = "Basic Mapping";
-                    System.out.println("main: " + DiffWithRespTo + "=" + x + " Exprn=" + Exprn);
-                    expSimple = parseSimple(Exprn, variables, variablesDiff, DiffWithRespTo);
-                    System.out.println(" main:Result(Expn Value)=" + ExprnexpValue);
-                    expValue = parse(Exprn, variables, DiffWithRespTo);
-                    ExprnexpValue = expValue.eval();
-                    StrexpSimpleExpressMap1 = expSimple.SimpleExpr();
-
-                    System.out.println("main: " + DiffWithRespTo + "=" + x + " Basic Simple Exprn=" + StrexpSimpleExpressMap1);
-                    expValue = parse(StrexpSimpleExpressMap1, variables, DiffWithRespTo);
-                    DblexpValueMap1 = expValue.eval();
-                    System.out.println("main: " + DiffWithRespTo + "=" + x + " Basic Simple (Exprn Value)=" + DblexpValueMap1);
-                    StageMapping = "Differentiation";
-                    exp = parseDiff(StrexpSimpleExpressMap1, variables, variablesDiff, DiffWithRespTo);
-                    StrexpDiffExpress = exp.DiffExpr();
-                    System.out.println(" main:Result(Diff Equation)(" + i + " th order)=> " + StrexpDiffExpress);
-                    expValue = parse(StrexpDiffExpress, variables, DiffWithRespTo);
-                    DblexpDiffValue = expValue.eval();
-                    System.out.println("main: " + DiffWithRespTo + "=" + x + " Result(Diff Value)=" + DblexpDiffValue);
-
-                    StageMapping = "Integration";
-                    expIntegr = parseIntegr(StrexpDiffExpress, variables, variablesDiff, DiffWithRespTo);
-                    StrexpDiffExpress = expIntegr.IntegrExpr();
-                    System.out.println(" main:Result(Integral Equation)(" + i + " th order)=> " + StrexpDiffExpress);
-                    expValue = parse(StrexpDiffExpress, variables, DiffWithRespTo);
-                    DblexpDiffValue = expValue.eval();
-                    System.out.println("main: " + DiffWithRespTo + "=" + x + " Result(Integral Value)=" + DblexpDiffValue);
-
-                    StageMapping = "Integration Mapping";
-                    expSimple = parseSimple(StrexpDiffExpress, variables, variablesDiff, DiffWithRespTo);
-                    StrexpSimpleExpressMap2 = expSimple.SimpleExpr();
-                    System.out.println(" main:Result(Simplified Integral Equation)(" + i + " th order)=> " + StrexpSimpleExpressMap2);
-                    expValue = parse(StrexpSimpleExpressMap2, variables, DiffWithRespTo);
-                    DblexpValueMap2 = expValue.eval();
-                    System.out.println("main: " + DiffWithRespTo + "=" + x + " Result(Simplified Integral Value)=" + expValue.eval());
-                    System.out.print(System.lineSeparator());
-                    if (PassFailTestCaseString(TestCase, i, "Integre", Exprn, StrexpSimpleExpressMap1, StrexpDiffExpress, StrexpSimpleExpressMap2, EqnUnderTest, EqnSolArrayMap3[i], EqnSolArrayIntegrAlone[i], EqnSolArrayMap4[i])) {
-                        System.out.println(ConsoleColors.GREEN + " main:Test Case Status=" + "Pass STRING TEST Complete" + ConsoleColors.RESET);
-                        TestCasePassStrFlag = true;
-                    } else {
-                        System.out.println(ConsoleColors.RED + " main:Test Case Status=" + "FAIL STRING TEST Complete" + ConsoleColors.RESET);
-                        if(TestCasePassHighLevelFlag==true)
-                            TestCasePassHighLevelFlag=false;
-                    }
-
-                    if (PassFailTestCaseValue(TestCase, i, "Integre", Exprn, ExprnexpValue, DblexpValueMap1, DblexpDiffValue, DblexpValueMap2,variables)) {
-                        System.out.println(ConsoleColors.GREEN + " main:Test Case Status=" + "Pass VALUE TEST Complete" + ConsoleColors.RESET);
-                        TestCasePassValFlag = true;
-                    } else {
-                        System.out.println(ConsoleColors.RED + " main:Test Case Status=" + "FAIL VALUE TEST Complete" + ConsoleColors.RESET);
-                        if(TestCasePassHighLevelFlag==true)
-                            TestCasePassHighLevelFlag=false;
-                    }
-                    Exprn = StrexpSimpleExpressMap2;
-                    System.out.print(System.lineSeparator());
-
-                    if ((TestCasePassStrFlag == true) && (TestCasePassValFlag == true))
-                ;//Do Nothing : Test Case Passed
-                    else {
-                        String Temp = FailedTestCases.get(MaxIndexFail);
-                        String HashVal = "";
-                        if ((Temp != null) && (!Temp.equalsIgnoreCase(""))) {
-                            HashVal = Temp + "TestCase=" + TestCase + ":Order=" + (i - 1) + ":Str=" + TestCasePassStrFlag + ":Val=" + TestCasePassValFlag;
-                        } else {
-                            HashVal = "TestCase=" + TestCase + ":Order=" + (i - 1) + ":Str=" + TestCasePassStrFlag + ":Val=" + TestCasePassValFlag;
-                        }
-                        FailedTestCases.put(MaxIndexFail, HashVal);
-                        
-                    }
-                }
-            } catch (Exception MyException) {
-                System.out.print(System.lineSeparator());
-                System.out.print(System.lineSeparator());
-                MyException.printStackTrace();
-                System.out.println(ConsoleColors.RED + "TestCase " + TestCase + " Failed at Order=" + i + " due to Exception at Stage=" + StageMapping + "." + ConsoleColors.RESET);
-                System.out.print(System.lineSeparator());
-            }
-            System.out.print(System.lineSeparator());
-            if (TestCasePassHighLevelFlag==false) MaxIndexFail++;
-        }
-        System.out.println(ConsoleColors.RED + "mainDiffIntegreTest: TestCase Summary : Total Failed=" + MaxIndexFail + " Failed Test Cases are:" + ConsoleColors.RESET);
-        for (int y = 0; y < MaxIndexFail; y++) {
-            System.out.print(ConsoleColors.RED + " " + FailedTestCases.get(y) + ", " + ConsoleColors.RESET);
-            if ((y >= 10) && (y % 5 == 0)) {
-                System.out.print(System.lineSeparator());
-            }
-        }
-        System.out.print(System.lineSeparator());
-    }
     public static void mainUser(String... args) {
+        System.out.println(ConsoleColors.BLUE + "Differentiation / Integration:" + ConsoleColors.RESET);
         String TechDiffWithRespTo=DiffWithRespTo;
         String xExprn = "Enter*Your*Equation/Here:x^2+25:";
         Scanner scanner = new Scanner(System.in);
@@ -1395,18 +867,18 @@ public static String FailingTestHarnessDiff(String AlgoName,int j) {
         String Temp=scanner.nextLine();
         int TechDiffOrder=2;
         if (!Temp.equalsIgnoreCase(""))
-            TechDiffOrder=Integer.parseInt(scanner.nextLine());
-        System.out.print("You Entered Diff And Integration Order:"+(TechDiffOrder-1));
+            TechDiffOrder=Integer.parseInt(Temp);
+        System.out.print("You Entered Diff And Integration Order:"+(TechDiffOrder));
         System.out.print(System.lineSeparator());
         
-        System.out.println("Differentiation Started:");
+        System.out.println(ConsoleColors.BLUE + "Differentiation Started:" + ConsoleColors.RESET);
         
         UserDiff( xExprn, "mainUser", TechDiffOrder, TechDiffWithRespTo) ;
         System.out.print(System.lineSeparator());
         System.out.print(System.lineSeparator());
         System.out.print(System.lineSeparator());
         
-        System.out.println("Integration Started:");
+        System.out.println(ConsoleColors.BLUE + "Integration Started:" + ConsoleColors.RESET);
         UserIntegr( xExprn, "mainUser", TechDiffOrder, TechDiffWithRespTo) ;
         
     }
@@ -1422,7 +894,7 @@ public static String FailingTestHarnessDiff(String AlgoName,int j) {
         String StrexpDiffExpress = "";
         int TechDiffOrderIndex = 1;
         expValue = parse(Exprn, variables, TechDiffWithRespTo);
-        for (; (TechDiffOrderIndex <  TechDiffOrder) ; TechDiffOrderIndex++) {
+        for (; (TechDiffOrderIndex <=  TechDiffOrder) ; TechDiffOrderIndex++) {
             variables.put(TechDiffWithRespTo, 1.0);
             expSimple = parseSimple(Exprn, variables, variablesDiff, TechDiffWithRespTo);
             StrexpSimpleExpress = expSimple.SimpleExpr();
@@ -1430,7 +902,7 @@ public static String FailingTestHarnessDiff(String AlgoName,int j) {
 
             DiffExpr exp = parseDiff(StrexpSimpleExpress, variables, variablesDiff, TechDiffWithRespTo);
             StrexpDiffExpress = exp.DiffExpr();
-            System.out.println("UserDiff:Result(Diff Equation)(" + (TechDiffOrder-1) + " th order)=> " + StrexpDiffExpress);
+            System.out.println("UserDiff:Result(Diff Equation)(" + TechDiffOrderIndex + " th order)=> " + StrexpDiffExpress);
 
             expSimple = parseSimple(StrexpDiffExpress, variables, variablesDiff, TechDiffWithRespTo);
             StrexpSimpleExpress = expSimple.SimpleExpr();
@@ -1456,7 +928,7 @@ public static String FailingTestHarnessDiff(String AlgoName,int j) {
         String StrexpDiffExpress = "";
         int TechDiffOrderIndex = 1;
         expValue = parse(Exprn, variables, TechDiffWithRespTo);
-        for (; (TechDiffOrderIndex <  TechDiffOrder) ; TechDiffOrderIndex++) {
+        for (; (TechDiffOrderIndex <=  TechDiffOrder) ; TechDiffOrderIndex++) {
             variables.put(TechDiffWithRespTo, 1.0);
             expSimple = parseSimple(Exprn, variables, variablesDiff, TechDiffWithRespTo);
             StrexpSimpleExpress = expSimple.SimpleExpr();
@@ -1464,11 +936,11 @@ public static String FailingTestHarnessDiff(String AlgoName,int j) {
 
             exp = parseIntegr(StrexpSimpleExpress, variables, variablesDiff, TechDiffWithRespTo);
             StrexpDiffExpress = exp.IntegrExpr();
-            System.out.println("UserIntegr:Result(Integr Equation)(" + (TechDiffOrder-1) + " th order)=> " + StrexpDiffExpress);
+            System.out.println("UserIntegr:Result(Integr Equation)(" + TechDiffOrderIndex + " th order)=> " + StrexpDiffExpress);
 
             expSimple = parseSimple(StrexpDiffExpress, variables, variablesDiff, TechDiffWithRespTo);
             StrexpSimpleExpress = expSimple.SimpleExpr();
-            log.info("UserIntegr: TechDiffWithRespTo=" + TechDiffWithRespTo + " Basic Simple Exprn=" + StrexpSimpleExpress);
+            System.out.println("UserIntegr: TechDiffWithRespTo=" + TechDiffWithRespTo + " Basic Simple Exprn=" + StrexpSimpleExpress);
             expValue = parse(StrexpSimpleExpress, variables, TechDiffWithRespTo);
             System.out.println("UserIntegr:Result(Value)(" + TechDiffWithRespTo + "=" + variables.get(TechDiffWithRespTo) + ")=" + expValue.eval());
             Exprn = StrexpSimpleExpress;
@@ -1487,9 +959,11 @@ public static String FailingTestHarnessDiff(String AlgoName,int j) {
         String FuncG="2*x+98";
         //SimpleAlgebra F;
         SimpleAlgebraHghLvl F;
-        FoGLowLvL FuncComp;
+        FoG FuncComp;
+        //FoGLowLvL FuncComp;
         
         String TechDiffWithRespTo=DiffWithRespTo;
+        System.out.println(ConsoleColors.BLUE + "Algebra / Function Composition:" + ConsoleColors.RESET);
         System.out.print("Enter*Your* First Equation/Here:x^2+25:");
         
         Scanner scanner = new Scanner(System.in);
@@ -1530,7 +1004,9 @@ public static String FailingTestHarnessDiff(String AlgoName,int j) {
         StrexpSimpleExpress = expSimple.SimpleExpr();
         System.out.println("mainAlgebra: TechDiffWithRespTo=" + TechDiffWithRespTo + " Basic Simple Algebraic Exprn=" + StrexpSimpleExpress);
 
-        FuncComp=parseFoGLowLvL(FuncF, FuncG, variables, TechDiffWithRespTo);
+        FuncComp=parseFoG(FuncF, FuncG, variables, TechDiffWithRespTo);
+        
+        //FuncComp=parseFoGLowLvL(FuncF, FuncG, variables, TechDiffWithRespTo);
         if (!FuncComp.Substitute().contains("(")){
             expSimple = parseSimple(FuncComp.Substitute(), variables, variablesDiff, TechDiffWithRespTo);
             StrexpSimpleExpress = expSimple.SimpleExpr();
