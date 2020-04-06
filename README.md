@@ -54,7 +54,8 @@ Even though testing has been rigorous,the User is advised to manually compute hi
 
 The User can also check if his/her equation is part of the Regression Suite formats.
 
-
+While the answers in the Regression Suite have been hand computed and have been checked, some mistakes are still present.
+The User should bear this in mind.
 
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
