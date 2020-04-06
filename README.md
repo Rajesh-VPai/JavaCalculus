@@ -48,6 +48,12 @@ Run the function mainUser(args) and mainAlgebraUser(args); in File: MathsContxtL
 mainUser(args) does the Differentiation and Integration Interactively.
 mainAlgebraUser(args) does the multiplication of 2 equations Algebraicly. It also does the Function Composition (FoG) of the 2 equations.
 
+There are 2 other functions:mainDiff and mainIntegral which do a single differentiation and a single integration.
+
+Even though testing has been rigorous,the User is advised to manually compute his/her equation and verify if the software is as per design. If the User is unable to hand compute the equation, at least a tough portion of the equation should be hand computed and verified in a trial run before use.
+
+The User can also check if his/her equation is part of the Regression Suite formats.
+
 
 
 
