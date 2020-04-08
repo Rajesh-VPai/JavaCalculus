@@ -38,6 +38,7 @@ JavaCalculus is a Maths String Java Package that has the below:
 6. Simple Expression Interface: To obtain the simple mathematical Java equivalent string.
     - input: Java string: f(x)
     - output: Java string: s(x) : such that f(x)=s(x) in all respects mathematically.
+    - The purpose of this Interface is to simplify the inputs so that the differentiation & integration Interfaces are not complex. It also has the dual function of simplifying the output of the differentiation and integration interfaces by removing the leftover quirks of the mathematical operations to ensure a neat Java string. Hence it is recommended to use this interface at the input and output.
 
 JavaCalculus is about 12,000 Lines of Lambda Calculus Code which does not use Numeric Analysis Methods (Newton Raphson etc).
 This is just High School Mathematics Maths Formulae with Java Lambda Calculus Code.
@@ -50,10 +51,13 @@ Work In Progress (Future Development):
 2. Functions
 3. Parenthesis
 
-Development and Test Environment: Windows XP and Java 7 & Neteans 8.2
+Development and Test Environment: Windows XP and Java 7 & Netbeans 8.2
 
 Testing has been rigorous with the TestHarness Testing 216 Types(Formats) of Equations 
-This can be checked out by the User by running the Function (method):mainRegresssionDiffTest  and mainRegressionIntegrTest
+This can be checked out by the User by running the Function (method):mainRegresssionDiffTest  and mainRegressionIntegrTest.
+
+The Regression Suite has 216 types of equations with their differentiation and integration computed upto order 4. The User can add his/her additional order answers if required. 
+Testing has always been upto 4th order (order=5).
 
 ##### User Intructions:
 Run the function mainUser(args) and mainAlgebraUser(args); in File: MathsContxtLAv0_1.java
