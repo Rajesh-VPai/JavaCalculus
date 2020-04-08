@@ -19,18 +19,28 @@ JavaCalculus is a Maths String Java Package that has the below:
 1. Expression Interface:To obtain the value of a String Equation.
     - Taken initially from StackOverflow. Code written by StackOverflow User:Boann  and 
     - Code written by StackOverflow User:Mike Scholtes
-    - Free Source
-    - But modified by me extensively
+    - Boann's code was Free Source
+    - But modified by me extensively.
+    - input: Java string (function)(f(x) )
+    - output: Java double (function value)
 2. Differentiation Interface:To obtain the Symbolic Differentiation of an String Equation.
+    - input : Java string (f(x) )
+    - output : differentiation of f(x): f'(x)
 3. Integration Interface:To obtain the Symbolic Integration of an String Equation.
+    - input : Java string ( f(x) )
+    - output : integral of f(x) 
 4. Algebra Interface :To obtain the expansion of an Algebraic multiplication of 2 equations.
+    - input : 2 Java strings: f(x) & g(x)
+    - output: Java string : f(x) * g(x)
 5. Function Composition Interface :To obtain the Function Composition of 2 equations.
+    - input: 2 Java strings : f(x) & g(x)
+    - output: Java string : f(g(x)): fog(x)
 
 JavaCalculus is about 12,000 Lines of Lambda Calculus Code which does not use Numeric Analysis Methods (Newton Raphso etc).
 This is just High School Mathematics Maths Formulae with Java Lambda Calculus Code.
 This has been been tested for:
 1. Constant Coefficients (Integer , Double )
-2. X Term (Can be any primary Variable: z, a1, ao, an, a123 etc)
+2. X Term (Polynomial) (Can be any primary Variable: z, a1, ao, an, a123 etc)
 
 Work In Progress (Future Development):
 1. Independent Constants: dy/dx(ax+b) where a & b are independent constants with respect to x.
