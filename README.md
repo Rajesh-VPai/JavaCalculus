@@ -40,7 +40,7 @@ JavaCalculus is about 12,000 Lines of Lambda Calculus Code which does not use Nu
 This is just High School Mathematics Maths Formulae with Java Lambda Calculus Code.
 This has been been tested for:
 1. Constant Coefficients (Integer , Double )
-2. X Term (Polynomial) (Can be any primary Variable: z, a1, ao, an, a123 etc)
+2. X Term (Polynomial) (Can be any primary Variable: z, a1, ao, an, a123 , t etc)
 
 Work In Progress (Future Development):
 1. Independent Constants: dy/dx(ax+b) where a & b are independent constants with respect to x.
