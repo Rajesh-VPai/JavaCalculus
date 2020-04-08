@@ -35,8 +35,11 @@ JavaCalculus is a Maths String Java Package that has the below:
 5. Function Composition Interface :To obtain the Function Composition of 2 equations.
     - input: 2 Java strings : f(x) & g(x)
     - output: Java string : f(g(x)): fog(x)
+6. Simple Expression Interface: To obtain the simple mathematical Java equivalent string.
+    - input: Java string: f(x)
+    - output: Java string: s(x) : such that f(x)=s(x) in all respects mathematically.
 
-JavaCalculus is about 12,000 Lines of Lambda Calculus Code which does not use Numeric Analysis Methods (Newton Raphso etc).
+JavaCalculus is about 12,000 Lines of Lambda Calculus Code which does not use Numeric Analysis Methods (Newton Raphson etc).
 This is just High School Mathematics Maths Formulae with Java Lambda Calculus Code.
 This has been been tested for:
 1. Constant Coefficients (Integer , Double )
