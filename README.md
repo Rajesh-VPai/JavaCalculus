@@ -74,6 +74,166 @@ The User can also check if his/her equation is part of the Regression Suite form
 While the answers in the Regression Suite have been hand computed and have been checked, some mistakes are still present.
 The User should bear this in mind.
 
+# Release 3.0
+ Packages
+JavaCalculus is divided into 1 package of 9 Files:
+    1) MathsContxtLAv
+    2) DiffrIntegrSep
+    3) FuncInvSep
+    4) SimpleAlgebraSep
+    5) SubsStrSep
+    6) CalculusApplication
+    7) MathematicalTestHarness
+    8) TestHarnessClass
+    9) Usage
+
+TestHarness is divided into 1 package of 13 Files:
+    1) TestHarnessAlgebra
+    2) TestHarnessCoefficients
+    3) TestHarnessExpression
+    4) TestHarnessFInverse
+    5) TestHarnessFunctions
+    6) TestHarnessIndConstant
+    7) TestHarnessInfinityNaN
+    8) TestHarnessIsolation
+    9) TestHarnessNames
+    10) TestHarnessParentheses
+    11) TestHarnessPredicate
+    12) TestHarnessSignedX
+    13) TestHarnessUnitTest
+
+
+
+3. RUNNING THE PROGRAMS
+Using Netbeans 8.2, 
+    1) Open MathematicalTestHarness.java. 
+    2) Right Click
+    3) Select Run File
+
+
+5. ENGINEERING
+
+5.a Separation of Interface Code to appropriate files
+    1) The Original MathsContxtLAv Code has been decluttered and seperated out to individual files (File Name ending with “Sep”). The Java public & private keywords for variables have been used rationalized.
+    2) The parser “state” variables for each interface has been seperated to allow better command and control.
+ 
+
+5.b Design of Term
+A term in JavaCalculus follows the below grammar:
+  M*x^Exp*IndConstant*Parenthesis
+Where M: is a numerical String ( A constant integer or float)
+      X: is the prmary variable (used only by differentiator & Integrator- variable “DiffWithRespTo” in the code- can be alphanumeric as in x123, y256 etc (i.e of any length).)
+IndConstant: is any other variable(other than the primary variable (x) ). These are treated as constant string during Integration & Differentiation i.e Algebraic Coefficients.
+Parenthesis: This is a String expression of Constants, x and IndConstants with braces at the beginning & closing braces at the end. The Design Intent has been that JavaCalculus Differentiator & Integrator will appropriately differentiate/integrate it if it contains the primary variable.
+Infinity /NaN: The String “Infinity” & “NaN” can be used in M. However JavaCalculus uses it appropriately as an IndConstant.
+
+5.c Testing Improvements
+    1) “Status=Pass Conformal Map TEST” Or Function ConformalMapTestCaseIntegr has been added to check if the mapping holds true for :
+        a. 8 values of x (-3.0 to +4) at the high level followed by a +-DELTA (DELTA = 0.000001) (3 values (-DELTA, 0 , +Delta) )
+        b. mapping the primary variable to “y” using StrIntegr.replaceAll(DiffWithRespTo, "y");
+        c. High Level Algebraic Conformal Mapping:
+The mapping between :
+            1) Expression supplied by the user is checked with that of Simple Expression.
+            2) Differentiation / Integration Answer supplied by the user is checked with that of DiffExpr/ IntegrExpr
+            3) DiffExpr/ IntegrExpr Output is checked with that of Simple Expression (Map2).
+            4) This is repeated for (b.)
+
+Only if all pass is the status made GREEN.
+
+    2) PassFailTestCaseValue
+This has been improved from just checking Doublevalue to accomodating rounding off. Thus any numerical random values in the last few digits of Double are accomodated.
+
+
+5.d Test Results Reporting
+The Test Report is added at the end of the raw Test Results.(After Test Case 110023 
+    a) Summary:
+mainDiffTest: TestCase Summary : Total Failed=117 Out of Run TestCases-Dups=311 Passed Count=194 DupCount=17
+Section IsolationTestCases           Complete # of Failures=6 Out of=22 Test Cases. Dups=0 in Section 
+Section InfinityNaNTestCases         Complete # of Failures=0 Out of=20 Test Cases. Dups=0 in Section 
+Section SanityTestCases              Complete # of Failures=6 Out of=14 Test Cases. Dups=0 in Section 
+Section UnitTestCases                Complete # of Failures=8 Out of=28 Test Cases. Dups=2 in Section 
+Section Names                        Complete # of Failures=0 Out of=4 Test Cases. Dups=1 in Section 
+Section Coefficients                 Complete # of Failures=5 Out of=61 Test Cases. Dups=6 in Section 
+Section Exponent                     Complete # of Failures=2 Out of=11 Test Cases. Dups=0 in Section 
+Section SignedX                      Complete # of Failures=10 Out of=30 Test Cases. Dups=2 in Section 
+Section IndConstant                  Complete # of Failures=36 Out of=43 Test Cases. Dups=6 in Section 
+Section Parentheses                  Complete # of Failures=33 Out of=48 Test Cases. Dups=0 in Section 
+Section Function Test Cases          Complete # of Failures=2 Out of=2 Test Cases. Dups=0 in Section 
+Section Function Argument Test Cases Complete # of Failures=5 Out of=5 Test Cases. Dups=0 in Section 
+Section SoftwareEngg                 Complete # of Failures=4 Out of=23 Test Cases. Dups=0 in Section
+
+mainIntegrTest: j=110023 TestCase=110023
+mainIntegrTest: TestCase Summary : Total Failed=135 Out of Run TestCases-Dups=311 Passed Count=176 DupCount=17
+Section IsolationTestCases           Complete # of Failures=8 Out of=22 Test Cases. Dups=0 in Section 
+Section InfinityNaNTestCases         Complete # of Failures=5 Out of=20 Test Cases. Dups=0 in Section 
+Section SanityTestCases              Complete # of Failures=7 Out of=14 Test Cases. Dups=0 in Section 
+Section UnitTestCases                Complete # of Failures=5 Out of=28 Test Cases. Dups=2 in Section 
+Section Names                        Complete # of Failures=0 Out of=4 Test Cases. Dups=1 in Section 
+Section Coefficients                 Complete # of Failures=8 Out of=61 Test Cases. Dups=6 in Section 
+Section Exponent                     Complete # of Failures=4 Out of=11 Test Cases. Dups=0 in Section 
+Section SignedX                      Complete # of Failures=8 Out of=30 Test Cases. Dups=2 in Section 
+Section IndConstant                  Complete # of Failures=34 Out of=43 Test Cases. Dups=6 in Section 
+Section Parentheses                  Complete # of Failures=47 Out of=48 Test Cases. Dups=0 in Section 
+Section Function Test Cases          Complete # of Failures=2 Out of=2 Test Cases. Dups=0 in Section 
+Section Function Argument Test Cases Complete # of Failures=5 Out of=5 Test Cases. Dups=0 in Section 
+Section SoftwareEngg                 Complete # of Failures=2 Out of=23 Test Cases. Dups=0 in Section
+
+    b) Sectionwise Breakup:
+mainIntegrTest: TestCase Summary :  Failed Test Cases are:
+ TestCase=1003:Order=1:Str=false:Val=false:ConfValFlag=false,:Order=2:Str=false:Val=false:ConfValFlag=false,:Order=3:Str=false:Val=false:ConfValFlag=false,:Order=4:Str=false:Val=false:ConfValFlag=false,  TestCase=1004:Order=4:Str=false:Val=false:ConfValFlag=false,  TestCase=1005:Order=1:Str=false:Val=true:ConfValFlag=false,  TestCase=1015:Order=1:Str=false:Val=false:ConfValFlag=false,  TestCase=1016:Order=1:Str=false:Val=false:ConfValFlag=false,  TestCase=1019:Order=1:Str=false:Val=false:ConfValFlag=false, 
+ TestCase=1020:Order=1:Str=false:Val=false:ConfValFlag=false,  TestCase=1021:Order=1:Str=false:Val=false:ConfValFlag=false,  null
+,  Section IsolationTestCases           Complete # of Failures=8 Out of=22 Test Cases. Dups=0 in Section 
+,  TestCase=2003:Order=1:Str=false:Val=true:ConfValFlag=true, 
+ TestCase=2004:Order=1:Str=false:Val=true:ConfValFlag=true,  TestCase=2006:Order=1:Str=false:Val=true:ConfValFlag=true,  TestCase=2008:Order=1:Str=false:Val=true:ConfValFlag=true,  TestCase=2017:Order=1:Str=false:Val=true:ConfValFlag=true,  null
+, 
+ Section InfinityNaNTestCases         Complete # of Failures=5 Out of=20 Test Cases. Dups=0 in Section
+    c) Exception Breakup
+mainIntegrTest: Exception TestCase Summary : Total Exceptions=5 Exception Test Cases are:
+ TestCase=40046:Order=1:Str=false:Val=false,  TestCase=40047:Order=1:Str=false:Val=false,  TestCase=40048:Order=1:Str=false:Val=false,  TestCase=40049:Order=1:Str=false:Val=false,  TestCase=80035:Order=1:Str=false:Val=false, 
+mainIntegrTest: TestCase Duplicate Summary :  EqnDBIndex=328
+    d) Dups
+TestCase@5038@:Dup with :5036:
+TestCase@5042@:Dup with :5037:
+TestCase@10001@:Dup with :1000:
+TestCase@20001@:Dup with :4026:
+TestCase@20020@:Dup with :4030:
+TestCase@20022@:Dup with :4031:
+TestCase@20023@:Dup with :4032:
+TestCase@20031@:Dup with :4027:
+TestCase@20093@:Dup with :4026:
+TestCase@40005@:Dup with :4026:
+TestCase@40006@:Dup with :20002:
+TestCase@50003@:Dup with :4019:
+TestCase@50004@:Dup with :4020:
+TestCase@50012@:Dup with :40020:
+TestCase@50013@:Dup with :40021:
+TestCase@50048@:Dup with :50047:
+TestCase@50050@:Dup with :50049:
+    e) Exception Cause Breakup
+ 40046:For input string: "0.0E+0.010", 
+ 40047:For input string: "0.0E-0.010", 
+ 40048:For input string: "0.0E-0.010", 
+ 40049:For input string: "0.0E-1.010", 
+ 80035:String index out of range: -1,
+
+5.e Algebraic Conformal Mapping
+JavaCalculus 3.0 has been improved to output algebraic conformal strings.
+SimpleExpression has been improved to output algebraic conformal.
+DiffExpr has been improved to output algebraic conformal.
+IntegrExpr has been improved to output algebraic conformal.
+
+Thus (TestCase = 2000)
+"1.0/-0/x^8 + 1.0/-0/x^5 + 1.0/-0/x^4 - 1.0/-0/x - 25/-0";
+Simple Expression Map1: 
+"-Infinity/x^8.0-Infinity/x^5.0-Infinity/x^4.0+Infinity/x+Infinity";
+DiffExpr :
+"-Infinity*-8.0/x^9.0-Infinity*-5.0/x^6.0-Infinity*-4.0/x^5.0-Infinity/x^2.0+Infinity";
+IntegrExpr:
+"-Infinity/-7.0/x^7.0-Infinity/-4.0/x^4.0-Infinity/-3.0/x^3.0+Infinity*ln(x)+Infinity*x";
+Simple Expression Map2(IntegrExpr): 
+"Infinity/7.0/x^7.0+Infinity/4.0/x^4.0+Infinity/3.0/x^3.0+Infinity*ln(x)+Infinity*x";
+
+The Design intent has been to allow extremely small values(Delta x) to be properly algebraicly mapped and Differentiated.It also helps in the debugging of very large Strings Equations  to check which term is causing the error.
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
