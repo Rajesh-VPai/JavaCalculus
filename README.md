@@ -106,7 +106,7 @@ TestHarness is divided into 1 package of 13 Files:
 
 3. RUNNING THE PROGRAMS
 Using Netbeans 8.2, 
-    1) Open MathematicalTestHarness.java. 
+    1) Open i. 
     2) Right Click
     3) Select Run File
 
@@ -120,7 +120,7 @@ Using Netbeans 8.2,
 
 5.b Design of Term
 A term in JavaCalculus follows the below grammar:
-  M*x^Exp*IndConstant*Parenthesis
+  M*x^Exp * IndConstant * Parenthesis
 Where M: is a numerical String ( A constant integer or float)
       X: is the prmary variable (used only by differentiator & Integrator- variable “DiffWithRespTo” in the code- can be alphanumeric as in x123, y256 etc (i.e of any length).)
 IndConstant: is any other variable(other than the primary variable (x) ). These are treated as constant string during Integration & Differentiation i.e Algebraic Coefficients.
