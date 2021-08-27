@@ -113,18 +113,20 @@ Using Netbeans 8.2,
 
 5. ENGINEERING
 
-5.a Separation of Interface Code to appropriate files
+5. Separation of Interface Code to appropriate files
     1) The Original MathsContxtLAv Code has been decluttered and seperated out to individual files (File Name ending with “Sep”). The Java public & private keywords for variables have been used rationalized.
     2) The parser “state” variables for each interface has been seperated to allow better command and control.
  
 
-5.b Design of Term
+5. Design of Term
 A term in JavaCalculus follows the below grammar:
   M*x^Exp * IndConstant * Parenthesis
-Where M: is a numerical String ( A constant integer or float)
-      X: is the prmary variable (used only by differentiator & Integrator- variable “DiffWithRespTo” in the code- can be alphanumeric as in x123, y256 etc (i.e of any length).)
-IndConstant: is any other variable(other than the primary variable (x) ). These are treated as constant string during Integration & Differentiation i.e Algebraic Coefficients.
-Parenthesis: This is a String expression of Constants, x and IndConstants with braces at the beginning & closing braces at the end. The Design Intent has been that JavaCalculus Differentiator & Integrator will appropriately differentiate/integrate it if it contains the primary variable.
+Where
+ 1. M: is a numerical String ( A constant integer or float)
+ 2. X: is the prmary variable (used only by differentiator & Integrator- variable “DiffWithRespTo” in the code- can be alphanumeric as in x123, y256 etc (i.e of any length).)
+3. Exp: is any constant
+4. IndConstant: is any other variable(other than the primary variable (x) ). These are treated as constant string during Integration & Differentiation i.e Algebraic Coefficients.
+5. Parenthesis: This is a String expression of Constants, x and IndConstants with braces at the beginning & closing braces at the end. The Design Intent has been that JavaCalculus Differentiator & Integrator will appropriately differentiate/integrate it if it contains the primary variable.
 Infinity /NaN: The String “Infinity” & “NaN” can be used in M. However JavaCalculus uses it appropriately as an IndConstant.
 
 5.c Testing Improvements
