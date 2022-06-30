@@ -237,11 +237,22 @@ Simple Expression Map2(IntegrExpr):
 
 The Design intent has been to allow extremely small values(Delta x) to be properly algebraicly mapped and Differentiated.It also helps in the debugging of very large Strings Equations  to check which term is causing the error.
 
-#  Release 4.0
-
-
-
-
+#  Release 5.0
+a) To run Program :
+  1) Open ExprSimpleStrSep.java
+    2) Right Click
+    3) Select Run File
+b) 2 new Interfaces have been created in ExprSimpleStrSep.java:
+a) SimpleStr : Does a 1 to 1 mapping of input Equation
+b) AlgebraicConfrmStr: Maps input Equation to its Algebraic Conformal Equation.
+ That is if Input Equation is :3*2*x
+ Algebraic Conformal Map is :6*x
+c) PassFailTestCaseValueEasy Created  and PassFailTestCaseValue renamed as PassFailTestCaseValueStrict:
+This allows 4th Order and 4th Degree Euqation Error due to numerical Noise to be filtered out of the Test Results.
+d) Test Results Output Tags the main program : MathsContxtLAv
+System.out.println("MathematicalTestHarness:Started:MathsContxtLAv:Run Started Time:" + current + " ");
+OR ExprSimpleStrSep.java
+ System.out.println("MathematicalTestHarness:Started:ExprSimpleStrSep:Run Started Time:" + current + " ");
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
