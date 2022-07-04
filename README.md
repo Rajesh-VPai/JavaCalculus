@@ -253,6 +253,7 @@ This allows 4th Order and 4th Degree Euqation Error due to numerical Noise to be
 System.out.println("MathematicalTestHarness:Started:MathsContxtLAv:Run Started Time:" + current + " ");
 OR ExprSimpleStrSep.java
  System.out.println("MathematicalTestHarness:Started:ExprSimpleStrSep:Run Started Time:" + current + " ");
+#e) CalculusApplication.java: Schrodinger Equation is also working.
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
