@@ -1,7 +1,7 @@
 # JavaCalculus
 JavaCalculus is a Java-based symbolic algebra and calculus system designed to parse, transform, evaluate and validate mathematical expressions through a controlled symbolic-processing pipeline. 
 ## Release
-
+# This is a public domain Software under CC0 & UniLicence
 ### Version 1.0.0 | October 2026
 
 Initial public release of JavaCalculus.
